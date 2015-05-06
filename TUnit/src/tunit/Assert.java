@@ -14,8 +14,8 @@ public class Assert {
     /**
      * Static values for insert to database (TODO: custom parameters for different users)
      */
-	public static String table = "example",
-				 		colums = "test_name, test_message, expected_result, actual_result, test_result, date";
+	public static String table = "example";
+	public static String colums = "test_name, test_message, expected_result, actual_result, test_result, date";
 	
 	/**
 	 * Save result to database with mandatory fields
