@@ -36,6 +36,8 @@ public class Assert {
 		DBUtil.insertTestData(table, colums, values);
 	}
 	
+	
+	
 	/**
 	 * Re-write for assertEquals
 	 * @param message
