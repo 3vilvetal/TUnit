@@ -4,7 +4,7 @@ import tunit.Assert;
 
 import org.junit.Test;
 
-public class HelloTest {
+public class HelloTestTUnit {
 	
 	@Test
 	public void test1() {

@@ -6,8 +6,6 @@ import system.StackTraceInfo;
 
 public class Assert {
 	
-	
-	
 	/**
      * Protect constructor since it is a static only class
      */
@@ -37,8 +35,6 @@ public class Assert {
 		String values = "'"+ testName + "','" + message + "','" + expected + "','" + actual + "','" + testResult + "','" + testDate + "'";
 		DBUtil.insertTestData(table, colums, values);
 	}
-	
-	
 	
 	/**
 	 * Re-write for assertEquals
