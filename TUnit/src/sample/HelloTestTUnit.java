@@ -1,10 +1,35 @@
 package sample;
 import static tunit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+
 import tunit.Assert;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
+@RunWith(Parameterized.class)
 public class HelloTestTUnit {
+	
+	String site, location;
+	
+	// Each parameter should be placed as an argument here
+	// Every time runner triggers, it will pass the arguments
+	public HelloTestTUnit(String site, String location) {
+		this.site = site;
+		this.location = location;
+	}
+
+		
+	@Parameterized.Parameters
+	public static Collection<Object[]> primeNumbers() {
+	      return Arrays.asList(new Object[][] {
+	         { "hello.com", "ENG"},
+	         { "ok.net", "UKR" }
+	      });
+	   }
 	
 	@Test
 	public void test1() {
